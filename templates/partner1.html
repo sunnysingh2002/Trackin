@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partners</title>
+  <link rel="stylesheet" type="text/css" href="/static/style1.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
+  <script src="https://kit.fontawesome.com/94a5e29d5c.js" crossorigin="anonymous"></script>
+  <style>
+    p{
+      font-size: 17px;
+    }
+    span h2{
+      margin-top: 25px;
+      background-color: transparent;
+    }
+    .nav{
+      height: 45px;
+    }
+    .logo i{
+      padding-left: 1rem;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <section class="nav">
+        <!-- We can also insert any logo here     -->
+
+        <!-- We can also insert any logo here     -->
+        <div class="logo">
+            <a href="{%url 'home'%}"><i class="fa-solid fa-truck-fast fa-bounce fa-lg"></i>TRACK_IN</a>
+        </div>
+
+        <!--  checkbox to control the icon's state    -->
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+      <div class="menu-button"></div>
+    </label>
+        <!--  main menu    -->
+        <ul class="menu">
+          <li><a href="{%url 'home'%}" target="_top">Home</a></li>
+                <li><a href="{%url 'services'%}">Services</a></li>
+                
+                <li><a href="{%url 'shipform'%}">Ship With Us</a></li>
+                <li><a href="{%url 'partner'%}">Partners</a></li>
+                <li><a href="{%url 'about'%}">About Us</a></li>
+                <li><a href="{%url 'track'%}" class="order">Track</a></li>
+        </ul>
+    </section>
+</header>
+  
+<!-- Partners contents -->
+<span><h2>OUR PARTNERS</h2></span>
+  <div class="partner-section">
+    <ul> 
+      <li>
+        <img src="/static/partnersimages/amazon.png" alt="Amazon">
+        <h3>Amazon</h3>
+        <p>Amazon is a popular e-commerce platform and one of the world's largest online marketplaces. 
+            It was founded in 1994 by Jeff Bezos and initially started as an online bookstore.
+            Over the years, Amazon has expanded its offerings to include a wide range of products such as electronics, clothing, home goods, books, music, movies, and much more.</p>
+      </li>
+      <li>
+        <img src="/static/partnersimages/flipkart.jpg" alt="Flipkart">
+        <h3>Flipkart</h3>
+        <p>Flipkart is one of the largest and most well-known e-commerce platforms in India. 
+           Founded in 2007, Flipkart initially focused on selling books but has now expanded 
+           to offer a wide range of products across categories such as electronics, fashion, home appliances, beauty, 
+           and more. Flipkart provides a user-friendly interface, competitive pricing, secure payment options, and reliable delivery services.</p>
+      </li>
+      <li>
+        <img src="/static/partnersimages/myntra.png" alt="Myntra">
+        <h3>Myntra</h3>
+        <p>Myntra is a leading online fashion and lifestyle retailer in India. Launched in 2007, Myntra specializes
+             in offering a vast selection of clothing, footwear, accessories, and beauty products for men, women, 
+             and children. Myntra showcases products from numerous domestic and international brands, providing a 
+             convenient and engaging shopping experience.</p>
+      </li>
+      <li>
+        <img src="/static/partnersimages/snapdeal.jpg" alt="Snapdeal">
+        <h3>Snapdeal</h3>
+        <p>Snapdeal is another prominent e-commerce platform in India that offers a diverse range of products across
+            categories like electronics, fashion, home goods, appliances, and more. Founded in 2010, Snapdeal 
+            connects buyers and sellers from across the country, providing a vast marketplace with millions of products.</p>
+      </li>
+      <li>
+        <img src="/static/partnersimages/bluedart.png" alt="Bluedart">
+        <h3>Bluedart</h3>
+        <p>Blue Dart is a leading logistics and courier company in India. Established in 1983, it offers a 
+            comprehensive range of delivery services, including domestic and international express deliveries, 
+            freight transportation, and supply chain solutions. Blue Dart is known for its extensive reach, 
+            efficient delivery network, and strong customer service. </p>
+      </li>
+      <li>
+        <img src="/static/partnersimages/delhivery.png" alt="Delhivery">
+        <h3>Delhivery</h3>
+        <p>Delhivery is a prominent logistics and supply chain services provider in India. 
+            Founded in 2011, it has rapidly grown to become one of the largest e-commerce fulfillment networks
+            in the country.</p>
+      </li>
+      <!-- Add more partner items as needed -->
+    </ul>
+  </div>
+
+  <!-- <form>
+    <h3>Partner With Us</h3>
+    <div id="partnership-program">
+        <div class="input-box">
+            <input type="text" name="company-name" placeholder="Company Name" required>
+        </div>
+        <div class="input-box">
+            <input type="email" name="email" placeholder="Company's Email" required>
+        </div>
+        <div class="input-box">
+            <input type="number" name="number" placeholder="Phone Number" required>
+        </div>
+        <div class="input-box">
+            <input type="text" name="address" placeholder="Company's Address" required>
+        </div>
+        <input type="submit" value="Submit" id="btn-submit">
+    </div>
+   </form> -->
+   
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/static/styles.css" />
+    <title>About Us</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
+    <script src="https://kit.fontawesome.com/94a5e29d5c.js" crossorigin="anonymous"></script>
+    <style>
+        h1 {
+            font-size: 25px;
+        }
+
+        .main {
+            margin: 5% 20%;
+
+
+        }
+
+        .main2 {
+            margin: 5% 20%;
+        }
+
+        .main3 {
+            margin: 5% 20%;
+        }
+
+        p {
+            color: rgb(255, 255, 255);
+            line-height: 30px;
+            font-size: 20px;
+            text-align: left;
+        }
+
+        h1 {
+            color: rgb(201, 255, 8);
+        }
+
+        img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            margin: 5px 20px;
+
+        }
+
+        .content1,
+        .content2,
+        .content3 {
+            display: flex;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 450px) {
+            html {
+                font-size: 50%;
+                overflow-x: hidden;
+                overflow-y: scroll;
+                text-align: center;
+            }
+
+            .content1,
+            .content2,
+            .content3 {
+                display: block;
+                margin-top: 40px;
+                align-items: center;
+                justify-content: center;
+            }
+
+            img {
+                margin-top: 40px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header section starts  -->
+
+    <header>
+        <section class="nav">
+            <!-- We can also insert any logo here     -->
+
+            <!-- We can also insert any logo here     -->
+            <div class="logo">
+                <a href="{%url 'home'%}"><i class="fa-solid fa-truck-fast fa-bounce fa-lg"></i>TRACK_IN</a>
+            </div>
+
+            <!--  checkbox to control the icon's state    -->
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-button-container" for="menu-toggle">
+                <div class="menu-button"></div>
+            </label>
+            <!--  main menu    -->
+            <ul class="menu">
+                <li><a href="{%url 'home'%}" target="_top">Home</a></li>
+                <li><a href="{%url 'services'%}">Services</a></li>
+                
+                <li><a href="{%url 'shipform'%}">Ship With Us</a></li>
+                <li><a href="{%url 'partner'%}">Partners</a></li>
+                <li><a href="{%url 'about'%}">About Us</a></li>
+                <li><a href="{%url 'track'%}" class="order">Track</a></li>
+            </ul>
+        </section>
+    </header>
+    <section class="main-1">
+        <div class="main">
+            <h1>WHO ARE WE?</h1>
+            <div class="content1">
+                <p>We are India’s largest fully integrated tracking service provider. We aim to build the operating
+                    system for tracking service, through a combination of world-class infrastructure, logistics
+                    operations of the highest quality and cutting-edge engineering and technology capabilities.
+                </p>
+                <img class="img1" src="/static/about/trackin.png" alt="">
+            </div>
+
+        </div>
+    </section>
+    <hr>
+    <section class="main-2">
+        <div class="main2">
+            <h1>ITʼS IN THE GETTING THERE</h1>
+            <div class="content2">
+
+                <p>Since its inception, our team has successfully fulfilled over 2 billion orders across India. We have
+                    built a nation-wide network with a presence in every state, servicing over 18500 pin codes.24
+                    automated sort centres, 94 gateways, 2880 direct delivery centres, and a team of over 57000 people
+                    make it possible for us to deliver 24 hours a day, 7 days a week, 365 days a year.We are Delhivery.
+                </p>
+                <img src="/static/about/tracky.png" alt="">
+
+            </div>
+
+        </div>
+
+
+    </section>
+    <hr>
+    <section class="main-3">
+        <div class="main3">
+            <h1>OUR MISSION</h1>
+            <div class="content3">
+                <p class="one">Our mission is to enable customers to operate flexible, reliable and resilient supply
+                    chains at the lowest costs. We provided tracking service to a diverse base of over 27000 active
+                    customers such as e-commerce marketplaces,direct-to-consumer e-tailers and enterprises and SMEs
+                    across several verticals such as flipkart,amazon,zomato and many several company as follows.
+                    <br> This is achieved through high-quality tracking sevice and network engineering, a vast network
+                    of domestic and global partners and significant investments in trackingservices , all of which are
+                    orchestrated by our self-developed tracking system that drive network synergies within and across
+                    our services and enhance our value proposition to customers when it comes to tracking service
+                    industry.
+                </p>
+                <img src="/static/about/track.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- hero section ends   -->
+</body>
+
+</html>
